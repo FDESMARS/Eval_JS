@@ -1,37 +1,38 @@
-/*@font-face { font-family: "Lato"; src: css/
-  Lato-Regular.ttf; 
-}
-*/
+@font-face { 
+  font-family: "Lato"; 
+  src: local("/CSS/Lato/Lato-Regular.ttf") format("truetype"),
+};
+
 html {
-  font-size: 10px;
+   font-size: 10px;
 }
 body {
   background: linear-gradient(#f69d3c, #3f87a6);
   /*background-color: rgb(175, 154, 154);*/
   color: white;
-  font-family:Arial, Helvetica, sans-serif;
+  /*font-family:Arial, Helvetica, sans-serif;*/
 }
 
 
 body  {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h1, h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   text-shadow: 10px 5px 5px rgb(53, 49, 49);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   
 }
 
 .button {
   height: 5vh;
   width: 60vw;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius:0.5em;
   box-shadow: 10px 5px 5px rgb(53, 49, 49);
 
@@ -57,12 +58,11 @@ h2 {
 }
 
 #scorePlayer1, #scorePlayer2, #cumulInt {
-  display: flex-align;
   height: 5vh;
   width: 15vw;
   margin-left: 100px;
   background-color: rgb(211, 91, 101);
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
   text-shadow: 10px 5px 5px rgb(53, 49, 49);
   text-align: center;
@@ -90,29 +90,19 @@ h2 {
   font-size: 2rem;
  }
 
- /* class for title h2 of activities cards*/
-.act-title {
-  font-size: 1rem;
-  }
-
-  #scorePlayer1, #scorePlayer2, #cumulInt, #diceValue {
+   #scorePlayer1, #scorePlayer2, #cumulInt, #diceValue {
     display: flex-align;
-    height: 3vh;
-    width: 5vw;
-    font-size: 2rem;
+    height: 4vh;
+    width: 6vw;
+    font-size: 1.5rem;
     
 }
 .no-display, .display {
   width: 40px;
   height: 40px;
-
-  background-color: red;
-  border-radius: 50%;
-}
-.display {
-  background-color: green;
   
 }
+
 .button {
   height: 5vh;
   width: 40vw;
