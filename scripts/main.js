@@ -56,14 +56,19 @@ function cumul1(){
     } else {
         cumul = 0;
         array1 = [0];
-        
-        if (player1) {
+        // --function wait for initialise diceface and players before alert-----
+        function wait() {
+
+            if (player1) {
+            alert('Perdu! Joueur 1, vous avez fait "1" Passez votre Tour');
+
             player2 = true;
             classePlayer2.setAttribute("class","display");
             player1 = false;
             classePlayer1.setAttribute("class","no-display");
             cumulPlayer.innerHTML= p2;
         } else {
+            alert('Perdu! Joueur 2, vous avez fait "1" Passez votre Tour');
             player1 = true;
             classePlayer1.setAttribute("class","display");
             player2 = false;
@@ -71,13 +76,10 @@ function cumul1(){
             cumulPlayer.innerHTML= p1;
            
         }
-        
-        // --function wait for initialise diceface and players before alert-----
-        function wait () {
-            alert('Perdu! vous avez fait "1" Raz de votre Compteur');
-        }
+    }
         setTimeout (wait,250);
     };
+        
     document.getElementById("cumulInt").innerHTML= cumul;
     
 }; 
@@ -157,6 +159,7 @@ function startGame () {
     cumulPlayer.innerHTML= p1;
     classePlayer2.setAttribute("class","no-display");
     classePlayer1.setAttribute("class","display");
+    
 
     // ---Button Roll Dice-----Call rollDice and Cumul-Inter functions----
     buttonRollDice.addEventListener('click',cumul1);
