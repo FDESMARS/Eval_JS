@@ -4,68 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluation JS Jeu de Dés</title>
+    <title>Evaluation JS Jeu de dé</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container-fluid vh-100">
-    <main class="row h-100">
+    <main class="">
         <!--Page title-->
-        <h1 class="col-12 text-center">Jeu de dé</h1>
-        <div class="row justify-content-center">
-        <button class="col-4 button btn btn-success"
+        <div class="row h-10">
+            <h1 class="col-12 text-center">Jeu de dé</h1>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <button class="col-6 button btn btn-success"
             id="buttonStartGame" type="">Nouvelle partie</button>
+            <div class="col-3"></div>
         </div>
         
               
-        <div class="row  mt-5
-        row-cols-lg-1 row-cols-sm-1 justify-content-around ">
+        <div class="row  mt-5 row-cols-lg-1 justify-content-around">
             
           <!--first Player definition-->
-            <div class="col col-lg-5 mb-5
+            <div class="col-lg-5 mb-5
                      shadow p-2 back-color" id="colorPlayer1">
             
-                <div class="row justify-content-center">
+                <div class="row justify-content-around">
                     <!--Title -->
-                    <h2 class="row justify-content-center P1-title mr-5">JOUEUR N°1</h2>
+                    <h2 class="P1-title mr-5">JOUEUR N°1</h2>
+                </div>
+                <div class="row justify-content-around">
                     <div class="display" id="player1" ></div>
+                </div>
+                <div class="row justify-content-around">
                     <!--Score Display-->
-                    <p class="row justify-content-center text">
+                    <p class="text">
                         Score Total
                     </p> 
-                    <div class="row justify-content-center" id="scorePlayer1"></div>
-             
+                </div>
+                <div class="row justify-content-around">
+                    <div class="" id="scorePlayer1"></div>
                 </div>
             </div>
 
-        <!--Second Player definition-->
-            <div class="col col-lg-5 mb-5 
-                     shadow p-2 back-color" id="colorPlayer2">
+         <!--Second Player definition-->
+            <div class="col-lg-5 mb-5
+            shadow p-2 back-color" id="colorPlayer1">
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-around">
                     <!--Title -->
-                    <h2 class="row justify-content-center P1-title mr-5">JOUEUR N°2</h2>
-                    <div class="no-display" id="player2"></div>
+                    <h2 class="P1-title mr-5">JOUEUR N°2</h2>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="display" id="player2" ></div>
+                </div>
+                <div class="row justify-content-around">
                     <!--Score Display-->
-                    <p class="row justify-content-center text">
+                    <p class="text">
                         Score Total
                     </p> 
-                    <div id="scorePlayer2"></div>
-                    
-                    
-                
-  
+                </div>
+                <div class="row justify-content-around">
+                    <div class="" id="scorePlayer2"></div>
                 </div>
             </div>
         </div>
+        
         <div class="row justify-content-center">
-        <div class="">
-            <p id="cumulPlayer"> 
-                 
-            </p>
+             <div class="">
+                <p id="cumulPlayer"></p>
+            </div>
         </div>
+
         <div class="row justify-content-center">
-        <div class="text-center" id="cumulInt"></div>
+            <div class="text-center" id="cumulInt"></div>
         </div>
 
         <div class="row justify-content-center">

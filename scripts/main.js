@@ -154,6 +154,9 @@ function startGame () {
     document.getElementById("cumulInt").innerHTML= cumul;
     document.getElementById("scorePlayer1").innerHTML= scorePlayer1;
     document.getElementById("scorePlayer2").innerHTML= scorePlayer2;
+    cumulPlayer.innerHTML= p1;
+    classePlayer2.setAttribute("class","no-display");
+    classePlayer1.setAttribute("class","display");
 
     // ---Button Roll Dice-----Call rollDice and Cumul-Inter functions----
     buttonRollDice.addEventListener('click',cumul1);
