@@ -32,7 +32,7 @@ h2 {
 .button {
   height: 5vh;
   width: 60vw;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius:0.5em;
   box-shadow: 10px 5px 5px rgb(53, 49, 49);
 
@@ -62,7 +62,7 @@ h2 {
   width: 15vw;
   margin-left: 100px;
   background-color: rgb(211, 91, 101);
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   text-shadow: 10px 5px 5px rgb(53, 49, 49);
   text-align: center;
@@ -91,10 +91,10 @@ h2 {
  }
 
    #scorePlayer1, #scorePlayer2, #cumulInt, #diceValue {
-    display: flex-align;
+    
     height: 4vh;
     width: 6vw;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     
 }
 .no-display, .display {
