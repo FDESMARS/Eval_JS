@@ -39,10 +39,11 @@ let rollDice = () => 1 + Math.floor((Math.random()*6));
 
 //---Function cumul intermedary --------
 function cumul1(){
-    document.getElementById("cumulInt").innerHTML= cumul;
     // call function roll the dice----
     diceValue = rollDice();
     diceFace.setAttribute("src",`images\\${diceValue}.png`);
+    document.getElementById("cumulInt").innerHTML= cumul;
+    
     if (diceValue !== 1) {   
         array1.push(diceValue);
         const initialValue = 0;
